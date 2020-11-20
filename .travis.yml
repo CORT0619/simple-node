@@ -16,7 +16,7 @@ before_script:
 script:
   - docker --version # print the version for logging
   - docker build -t simple-node .
-  - docket tag simple-node cort0619/simple-node:latest
+  - docker tag simple-node cort0619/simple-node:latest
   
 # Tasks to perform after the process is successful.
 after_success:
