@@ -20,5 +20,5 @@ script:
   
 # Tasks to perform after the process is successful.
 after_success:
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_PASSWORD" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push cort0619/simple-node  
